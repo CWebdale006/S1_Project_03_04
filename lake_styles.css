@@ -27,7 +27,7 @@
 /*HTML and Body Styles*/
 html {
     /* background-color: rgba(110, 36, 94, 0.5); */
-    background-color: hsla(271, 87%, 41%, 0.37);
+    background-color: hsla(270, 81%, 19%, 0.479);
 }
 
 body {
@@ -35,20 +35,20 @@ body {
 }
 
 /*Navigation Styles*/
-nav {
+nav#header {
     background-color: rgb(200, 200, 200);
 }
 
-nav>ul>li>a,
-nav>ul>li>a:visited {
+nav#header>ul>li>a,
+nav#header>ul>li>a:visited {
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
     color: rgb(43, 50, 124);
 }
 
-nav>ul>li>a:hover,
-nav>ul>li>a:active {
+nav#header>ul>li>a:hover,
+nav#header>ul>li>a:active {
     font-size: 1.1em;
     padding-top: 8.6px;
     padding-bottom: 8.6px;
@@ -57,7 +57,7 @@ nav>ul>li>a:active {
 }
 
 /*Left Column Styles*/
-section#leftcol h1 {
+section h1 {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 15px;
@@ -65,20 +65,98 @@ section#leftcol h1 {
     font-family: 'Dobkin';
 }
 
-section#leftcol p {
-    text-indent: 4%;
+section#leftcol aside h1 {
+    font-family: 'Champagne';
 }
 
+section#leftcol p {
+    text-indent: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+}
+
+aside {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+aside h1 {
+    text-align: center;
+    font-family: 'Champagne';
+    margin: 8px 0px 14px 0px;
+}
+
+/*Notes Aside Styles*/
 aside#notes {
     background-color: hsla(36, 98%, 57%, 0.37);
 }
 
-section#leftcol aside {
-    font-family: 'Champagne';
+aside#notes ul {
+    padding-left: 35px;
 }
 
-/*Notes Aside Styles*/
 /*Upcoming Events Aside Styles*/
+aside#upcoming {
+    background-color: hsla(4, 79%, 43%, 0.37);
+}
+
+aside#upcoming h2 {
+    font-size: 1.2em;
+    margin: 0px 4px 4px 4px;
+}
+
+aside#upcoming p {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
 /*Right Column Styles*/
+section#rightcol {
+    background-color: hsla(273, 57%, 66%, 0.37);
+}
+
+section#rightcol h2 {
+    margin: 10px 0px 10px 0px;
+}
+
+nav#rightcol>ul {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+
+nav#rightcol>ul>li>a,
+nav#rightcol>ul>li>a:visited {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    text-decoration: none;
+    color: rgb(43, 50, 124);
+}
+
+nav#rightcol>ul>li>a:hover,
+nav#rightcol>ul>li>a:active {
+    /* font-size: 1.1em;
+    padding-top: 8.6px;
+    padding-bottom: 8.6px; */
+    text-decoration: none;
+    background-color: hsla(273, 57%, 50%, 0.37);
+}
+
 /*Blockquote Styles*/
+blockquote::before {
+    content: open-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /*idk padding or something */
+}
+
 /*Footer Styles*/
+footer {
+    background: rgb(190, 190, 190);
+    text-align: center;
+}
