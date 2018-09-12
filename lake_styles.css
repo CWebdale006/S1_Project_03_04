@@ -24,10 +24,13 @@
    Filename: lake_styles.css 
 
 */
+
 /*HTML and Body Styles*/
+/*changed document and body backgrounds to match the logo colors*/
 html {
     /* background-color: rgba(110, 36, 94, 0.5); */
-    background-color: hsla(270, 81%, 19%, 0.479);
+    /* background-color: hsla(270, 81%, 19%, 0.479); */
+    background-color: hsla(274, 66%, 9%, 0.725);
 }
 
 body {
@@ -35,6 +38,7 @@ body {
 }
 
 /*Navigation Styles*/
+/*Set style rules for the background, text color, and style of links. Changed font size for the hovered or active links. */
 nav#header {
     background-color: rgb(200, 200, 200);
 }
@@ -57,24 +61,26 @@ nav#header>ul>li>a:active {
 }
 
 /*Left Column Styles*/
+/*Added a style rule to change font, font size, and margins of the "Welcome" text. */
 section h1 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 15px;
+    margin: 8px 0px 8px 15px;
     font-size: 2.4em;
     font-family: 'Dobkin';
 }
 
+/*Style rule to set font of "Notes" and "Upcoming Events" text to 'Champagne'*/
 section#leftcol aside h1 {
     font-family: 'Champagne';
 }
 
+/*Indented beginning text and changed font. */
 section#leftcol p {
     text-indent: 4%;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 8px;
 }
 
+/*Changed font and margins for the aside text. */
 aside {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -86,6 +92,7 @@ aside h1 {
 }
 
 /*Notes Aside Styles*/
+/*Changed background color to stand-out from body paragraph. */
 aside#notes {
     background-color: hsla(36, 98%, 57%, 0.37);
 }
@@ -95,6 +102,7 @@ aside#notes ul {
 }
 
 /*Upcoming Events Aside Styles*/
+/*Changed background color to stand out from body paragraph and the "Notes" aside. Changed font size and margins to have a length similar to the "Notes" aside. */
 aside#upcoming {
     background-color: hsla(4, 79%, 43%, 0.37);
 }
@@ -110,38 +118,49 @@ aside#upcoming p {
 }
 
 /*Right Column Styles*/
+/*Changed background color and margins to be less cluttered. */
 section#rightcol {
     background-color: hsla(273, 57%, 66%, 0.37);
+    margin-right: 0px;
+    margin-top: 27.5px;
 }
 
 section#rightcol h2 {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 5px 0px;
 }
 
+nav#rightcol h2 {
+    padding-left: 6px;
+}
+
+/*Added style rules to make links less cluttered. Added style rules to create a difference between active and hovered links. */
 nav#rightcol>ul {
     list-style-type: none;
-    padding-left: 30px;
+    padding-left: 25px;
+    margin-top: 9px;
     margin-bottom: 0px;
 }
 
 nav#rightcol>ul>li>a,
 nav#rightcol>ul>li>a:visited {
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
     text-decoration: none;
     color: rgb(43, 50, 124);
 }
 
 nav#rightcol>ul>li>a:hover,
 nav#rightcol>ul>li>a:active {
-    /* font-size: 1.1em;
-    padding-top: 8.6px;
-    padding-bottom: 8.6px; */
+    /*change from backgrund color changing to text color changing */
     text-decoration: none;
     background-color: hsla(273, 57%, 50%, 0.37);
 }
 
 /*Blockquote Styles*/
+/*Changed margins to be more readable on the page. */
+section#rightcol blockquote {
+    margin: 16px 20px 16px 20px;
+}
+
+/*Added quotes before and after the content of blockquotes. */
 blockquote::before {
     content: open-quote;
     font-family: 'Times New Roman', Times, serif;
@@ -152,10 +171,10 @@ blockquote::after {
     content: close-quote;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    /*idk padding or something */
 }
 
 /*Footer Styles*/
+/*Set footer styles to a dark grey to be more noticeable. */
 footer {
     background: rgb(190, 190, 190);
     text-align: center;
