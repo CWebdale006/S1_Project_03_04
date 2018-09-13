@@ -149,15 +149,14 @@ nav#rightcol>ul>li>a:visited {
 
 nav#rightcol>ul>li>a:hover,
 nav#rightcol>ul>li>a:active {
-    /*change from backgrund color changing to text color changing */
-    text-decoration: none;
-    background-color: hsla(273, 57%, 50%, 0.37);
+    color: rgba(43, 50, 124, 0.4);
+    text-decoration: underline;  
 }
 
 /*Blockquote Styles*/
 /*Changed margins to be more readable on the page. */
 section#rightcol blockquote {
-    margin: 16px 20px 16px 20px;
+    margin: 16px 20px 16px 15px;
 }
 
 /*Added quotes before and after the content of blockquotes. */
@@ -178,4 +177,8 @@ blockquote::after {
 footer {
     background: rgb(190, 190, 190);
     text-align: center;
+}
+/*Horizontal Rule Styles*/
+hr {
+    color: antiquewhite;
 }
